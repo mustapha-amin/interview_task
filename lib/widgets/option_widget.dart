@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:interview_task/extensions.dart';
-import 'package:interview_task/kTextStyle.dart';
+import 'package:interview_task/utils/extensions.dart';
+import 'package:interview_task/utils/kTextStyle.dart';
+import 'package:sizer/sizer.dart';
 
 class OptionWidget extends StatelessWidget {
   String? text;
@@ -22,8 +23,8 @@ class OptionWidget extends StatelessWidget {
         spacing: 5,
         children: [
           Container(
-            width: 20,
-            height: 20,
+            width: 20.sp,
+            height: 20.sp,
             decoration: BoxDecoration(
               color: leading == "D" ? Color(0xff8B88EF) : Colors.transparent,
               shape: BoxShape.circle,

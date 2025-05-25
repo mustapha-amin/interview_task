@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:interview_task/kTextStyle.dart';
+import 'package:interview_task/utils/kTextStyle.dart';
+import 'package:sizer/sizer.dart';
 
 class DetailsSection extends StatelessWidget {
   const DetailsSection({super.key});
@@ -13,10 +14,10 @@ class DetailsSection extends StatelessWidget {
           padding: const EdgeInsets.only(left: 23.0, bottom: 8),
           child: Row(
             spacing: 8,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 25,
+                radius: 20.sp,
                 backgroundImage: AssetImage('assets/images/joey.png'),
               ),
               Column(
@@ -48,7 +49,7 @@ class DetailsSection extends StatelessWidget {
         Text(
           "\"Mine is definitely the peace in the morning\"",
           style: kTextStyle(
-            12,
+            13.sp,
             color: Color(0xff8e8db2),
             fontStyle: FontStyle.italic,
           ),

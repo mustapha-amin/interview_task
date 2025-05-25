@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:interview_task/extensions.dart';
-import 'package:interview_task/kTextStyle.dart';
+import 'package:interview_task/utils/extensions.dart';
+import 'package:interview_task/utils/kTextStyle.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({super.key});
@@ -27,8 +27,8 @@ class HeaderWidget extends StatelessWidget {
                       ).copyWith(
                         shadows: [
                           Shadow(
-                            color: Colors.black.withValues(alpha: 0.5),
-                            blurRadius: 8,
+                            color: Colors.black.withValues(alpha: 0.7),
+                            blurRadius: 9,
                             offset: Offset(0, 1),
                           ),
                         ],
