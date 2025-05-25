@@ -105,7 +105,7 @@ class _HomeState extends State<Home> {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/images/flame.svg'),
+            icon: SvgPicture.asset('assets/images/bonfire.svg'),
             label: '',
           ),
           BottomNavigationBarItem(
