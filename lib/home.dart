@@ -5,6 +5,7 @@ import 'package:interview_task/utils/kTextStyle.dart';
 import 'package:interview_task/widgets/details_section.dart';
 import 'package:interview_task/widgets/header_widget.dart';
 import 'package:interview_task/widgets/option_widget.dart';
+import 'package:interview_task/widgets/options_block.dart';
 import 'package:sizer/sizer.dart';
 
 class Home extends StatefulWidget {
