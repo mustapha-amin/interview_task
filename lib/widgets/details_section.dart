@@ -1,9 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:interview_task/utils/kTextStyle.dart';
+import 'package:interview_task/utils/options_notifier.dart';
 import 'package:sizer/sizer.dart';
 
-class DetailsSection extends StatelessWidget {
+class DetailsSection extends StatefulWidget {
   const DetailsSection({super.key});
+
+  @override
+  State<DetailsSection> createState() => _DetailsSectionState();
+}
+
+class _DetailsSectionState extends State<DetailsSection> {
+  OptionNotifer optionNotifer = OptionNotifer();
+  @override
+  void initState() {
+    super.initState();
+    optionNotifer.addListener(() {
+      setState(() {});
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +62,7 @@ class DetailsSection extends StatelessWidget {
           ),
         ),
         Text(
-          "\"Mine is definitely the peace in the morning\"",
+          "\"Mine is definitely ${optionNotifer.options[optionNotifer.selectedOption]}\"",
           style: kTextStyle(
             13.sp,
             color: Color(0xff8e8db2),
